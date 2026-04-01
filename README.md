@@ -97,6 +97,8 @@
 ```
 delivery-analytics/
 │
+├── 📁raw data-
+     
 ├── 📁bronze-
      ├── 📓 bronze.ipynb                  # Bronze ingestion: S3 → Delta
      ├── 📓 delivery_ddl.ipynb            # Schema definitions (DDL)
@@ -110,6 +112,8 @@ delivery-analytics/
 
 ├── 📁Delivery Analytics Dashboard-
     └── 📄 Delivery Analytics Dashboard   # Databricks deshboard
+├── 📁Superset Analytics Dashboard-
+    └── 📄 superset_setup.md             # Superset connection + dashboard guide
 ├── 📄 ai_test_queries.md                 # Full QA test suite (60+ questions)
 ```
 
@@ -299,7 +303,7 @@ Two modes available inside the notebook:
 
 ---
 
-## 📊 Superset Dashboards — `superset_setup.md`
+## 📊 Superset Dashboards — `superset_setup`
 
 Three production dashboards over `gold_rpt` + `gold_ai`:
 

@@ -81,7 +81,7 @@
             │                                  │
             ▼                                  ▼
 ┌─────────────────────────┐    ┌──────────────────────────────────────┐
-│  📊 Apache Superset     │    │     🤖 AI Query Agent (NL→SQL→NL)   │
+│  📊 datbricks           │    │     🤖 AI Query Agent (NL→SQL→NL)   │
 │  Operations Dashboard   │    │                                      │
 │  Revenue & Payments     │    │  User asks in English                │
 │  Driver Performance     │    │     → GPT OSS 20B generates SQL      │
@@ -97,15 +97,20 @@
 ```
 delivery-analytics/
 │
-├── 📓 bronze.ipynb                  # Bronze ingestion: S3 → Delta
-├── 📓 silver.ipynb                  # Silver cleaning + SCD-2 upserts
-├── 📓 gold_rpt_population.ipynb     # Gold reporting: star schema build
-├── 📓 gold_ai.ipynb                 # Gold AI: flat tables + aggregates
-├── 📓 ai_solution.ipynb             # NL → SQL → NL agent (GPT OSS 20B)
-├── 📓 delivery_ddl.ipynb            # Schema definitions (DDL)
-│
-├── 📄 ai_test_queries.md            # Full QA test suite (60+ questions)
-└── 📄 superset_setup.md             # Superset connection + dashboard guide
+├── 📁bronze-
+     ├── 📓 bronze.ipynb                  # Bronze ingestion: S3 → Delta
+     ├── 📓 delivery_ddl.ipynb            # Schema definitions (DDL)
+├── 📁silver-
+     ├── 📓 silver.ipynb                  # Silver cleaning + SCD-2 upserts
+├── 📁gold-
+     ├── 📓 gold_rpt_population.ipynb     # Gold reporting: star schema build
+     ├── 📓 gold_ai.ipynb                 # Gold AI: flat tables + aggregates
+├── 📁ai_solution-
+     ├── 📓 ai_solution.ipynb             # NL → SQL → NL agent (GPT OSS 20B)
+
+├── 📁Delivery Analytics Dashboard-
+    └── 📄 Delivery Analytics Dashboard   # Databricks deshboard
+├── 📄 ai_test_queries.md                 # Full QA test suite (60+ questions)
 ```
 
 ---

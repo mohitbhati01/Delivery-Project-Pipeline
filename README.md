@@ -109,12 +109,12 @@ delivery-analytics/
      ├── 📓 gold_ai.ipynb                 # Gold AI: flat tables + aggregates
 ├── 📁ai_solution-
      ├── 📓 ai_solution.ipynb             # NL → SQL → NL agent (GPT OSS 20B)
-
+     ├── 📄 ai_test_queries.md                 # Full QA test suite (60+ questions)
 ├── 📁Delivery Analytics Dashboard-
     └── 📄 Delivery Analytics Dashboard   # Databricks deshboard
 ├── 📁Superset Analytics Dashboard-
     └── 📄 superset_setup.md             # Superset connection + dashboard guide
-├── 📄 ai_test_queries.md                 # Full QA test suite (60+ questions)
+
 ```
 
 ---
